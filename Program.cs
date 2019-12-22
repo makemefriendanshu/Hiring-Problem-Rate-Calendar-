@@ -13,7 +13,7 @@ namespace hiring_problem
             var rateCalendarItems = solution.GetRateCalendarItem(dataTable);
             var rateCalendarItems2 = solution.GetRateCalendarItems2(rateCalendarItems);
             for (int i = 0; i < rateCalendarItems2.Count; i++)
-                Console.WriteLine(rateCalendarItems2[i].StayDateStart + " " + rateCalendarItems2[i].StayDateEnd + " " + rateCalendarItems2[i].RoomTypeId + " " + rateCalendarItems2[i].AvailableRooms + " " + rateCalendarItems2[i].RoomAmount + " " + rateCalendarItems2[i].TaxAmount);
+                Console.WriteLine(rateCalendarItems2[i].StayDateStart.ToString("dd/MMM/yyyy") + " " + rateCalendarItems2[i].StayDateEnd.ToString("dd/MMM/yyyy") + " " + rateCalendarItems2[i].RoomTypeId + " " + rateCalendarItems2[i].AvailableRooms + " " + rateCalendarItems2[i].RoomAmount + " " + rateCalendarItems2[i].TaxAmount);
         }
 
     }
