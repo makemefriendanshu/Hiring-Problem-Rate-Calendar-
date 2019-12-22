@@ -36,9 +36,8 @@ namespace hiring_problem
             {
                 int j = i;
                 while (j < rateCalendarItems.Count && rateCalendarItems[i].RoomAmount == rateCalendarItems[j].RoomAmount && rateCalendarItems[i].AvailableRooms == rateCalendarItems[j].AvailableRooms)
-                {
                     j++;
-                }
+
                 var rateCalendarItem2 = new RateCalendarItem2();
                 rateCalendarItem2.StayDateStart = rateCalendarItems[i].StayDate;
                 rateCalendarItem2.StayDateEnd = rateCalendarItems[j - 1].StayDate;
